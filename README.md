@@ -1,2 +1,0 @@
-# Robotico_codex
-<codex>
