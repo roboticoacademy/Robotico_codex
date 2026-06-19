@@ -1,0 +1,32 @@
+#navbar input {
+    display: none;
+   
+}
+.nav-btn {
+    background-color: rgb(71, 71, 217);
+    color: whitesmoke;
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    padding-top: 2px;
+    padding-bottom:5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 10px; 
+    font-size: 22px;
+
+}
+.nav-items{
+    flex-direction: column;
+    display: none;
+    background-color: rgb(71, 71, 217);
+    text-align: center;
+    margin: -10px;
+}
+.nav-items a{
+    text-decoration-line: none;
+        color: whitesmoke;
+}
+#nav-btn:checked ~ .nav-items {
+    display: flex;
+}
