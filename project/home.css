@@ -70,6 +70,55 @@ pointer-events: auto;
    font-size: 37px;
    margin-top: 40px;
 }
-#card-inf{
-      color:  rgb(71, 71, 217);
+#card-info{
+      color:  #34495e;
+      background-color: #eaeaea;
+      width: 450px;
+      height: 180px;
+      border-radius: 15px;
+      padding-top: 10px;
+      margin-left: 155px;
+      margin-top: 130px;
+      padding: 8px;
+}
+#card-info a{
+    position:fixed;
+    text-decoration-line: none;
+    background-color:rgb(71, 71, 217) ;
+    color: whitesmoke;
+    padding: 7px;
+    border-radius: 5px;
+    left: 335px;
+    position: relative;
+    transition: 0.4s ease;
+}
+#card-info a:hover{
+      background-color: rgb(96, 96, 212);
+      padding: 10px;
+   
+}
+#stats-card{
+     color:  #34495e;
+      background-color: #eaeaea;
+      width: 400px;
+      height: 180px;
+      border-radius: 15px;
+      padding-top: 10px;
+      margin-left: 680px;
+      margin-top: -200px;
+      padding: 8px;
+      display: flex;
+      flex-wrap: wrap;
+}
+.card{
+     background-color: rgb(96, 96, 212);
+     padding: 10px;
+     border-radius: 15px;
+     width: 60px;
+     height: 62px;
+     color: whitesmoke;
+    padding-top: 14px;
+    text-align: center;
+     font-size: large;
+
 }
