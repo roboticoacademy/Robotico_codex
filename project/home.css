@@ -19,7 +19,7 @@ body{
 }
 .nav-btn {
     z-index: 999;
-    background-color: rgb(71, 71, 217);
+    background-color: rgb(96, 96, 212);
     color: whitesmoke;
     position: absolute;
     top: 13px;
@@ -35,7 +35,7 @@ body{
 }
 .nav-items{
     flex-direction: column;
-    background-color: rgb(71, 71, 217);
+   background-color: rgb(96, 96, 212);
     justify-content: center;
     padding:15px;
     padding-top: 70px;
@@ -54,7 +54,7 @@ body{
         padding: 6px;
 }
 .nav-items a:hover{
-   background-color: rgb(96, 96, 212);
+   background-color: rgb(109, 109, 215);
    border-radius: 15px;
    text-align: center;
 }
@@ -114,11 +114,22 @@ pointer-events: auto;
      background-color: rgb(96, 96, 212);
      padding: 10px;
      border-radius: 15px;
-     width: 60px;
-     height: 62px;
+     width: 96px;
+     height: 61px;
      color: whitesmoke;
     padding-top: 14px;
     text-align: center;
-     font-size: large;
-
+    font-size: large;
+     margin: 3px;
+  
+}
+.card:hover{
+    transition: 0.3s ease;
+    background-color: rgb(110, 110, 214);
+    text-align: center;
+    font-size: larger;
+    width: 100px;
+    height: 65px;
+    cursor: pointer;
+  
 }
