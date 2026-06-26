@@ -22,6 +22,7 @@ body{
 }
 
 
+
 #header{
     position: fixed;
     top: 0;
@@ -36,6 +37,7 @@ body{
     color: var(--blue);
     margin: 10px;
 }
+
 
 
 #navbar input{
@@ -68,15 +70,11 @@ body{
 
 
 .menu-icon{ display: inline; }
-.close-icon{ display: none; }
 
 #nav-btn:checked + .nav-btn .menu-icon{
     display: none;
 }
 
-#nav-btn:checked + .nav-btn .close-icon{
-    display: inline;
-}
 
 
 
@@ -149,7 +147,6 @@ body{
 }
 
 
-
 #card-info{
     display: flex;
     flex-direction: column;
@@ -188,7 +185,6 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 55px;
-    min-width: 75px;
     padding: 8px;
     text-align: center;
     color: white;
@@ -203,7 +199,7 @@ body{
 }
 
 .card:hover{
-    padding: 11px;
+    transform: scale(1.08);
 }
 
 footer{
@@ -219,6 +215,8 @@ footer{
     margin: 0 10px;
     font-size: 22px;
 }
+
+
 
 
 @media (max-width: 900px){
