@@ -17,6 +17,7 @@
     --link-blue: #6ea8ff;
   }
 
+  
   * {
     box-sizing: border-box;
   }
@@ -36,121 +37,8 @@
     text-decoration: none;
   }
 
-  /* ===================== NAVBAR ===================== */
-  .navbar {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 18px 48px;
-    background-color: rgba(22, 27, 46, 0.92);
-    backdrop-filter: blur(8px);
-    border-bottom: 1px solid var(--border-subtle);
-  }
 
-  .navbar .brand {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 20px;
-    font-weight: 800;
-    color: var(--text-white);
-  }
-
-  .navbar .brand .icon {
-    font-size: 22px;
-  }
-
-  .navbar .nav-links {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-  }
-
-  .navbar .nav-links a {
-    color: var(--text-muted);
-    font-size: 15px;
-    font-weight: 500;
-    transition: color 0.2s ease;
-  }
-
-  .navbar .nav-links a:hover {
-    color: var(--blue-light);
-  }
-
-  .navbar .nav-cta {
-    background-color: var(--blue-accent);
-    color: #fff;
-    padding: 10px 22px;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 14px;
-    transition: background-color 0.2s ease;
-  }
-
-  .navbar .nav-cta:hover {
-    background-color: #3d68e0;
-  }
-
-  .nav-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: var(--text-white);
-    font-size: 22px;
-    cursor: pointer;
-  }
-
-
-  /* ===================== WELCOME CARD ===================== */
-  .welcome-card {
-    background: radial-gradient(circle at 30% 20%, var(--bg-card-gradient-start), var(--bg-card-gradient-end) 70%);
-    border: 1px solid var(--border-card);
-    border-radius: 18px;
-    padding: 50px 36px;
-    text-align: center;
-  }
-
-  .welcome-icon {
-    font-size: 60px;
-    margin-bottom: 24px;
-    line-height: 1;
-  }
-
-  .welcome-eyebrow {
-    color: var(--blue-light);
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 4px;
-    margin: 0 0 10px;
-  }
-
-  .welcome-title {
-    font-size: 38px;
-    font-weight: 800;
-    line-height: 1.15;
-    margin: 0 0 18px;
-    background: linear-gradient(180deg, #ffffff 0%, var(--blue-accent) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
-
-  .welcome-title .line-2 {
-    letter-spacing: 6px;
-    font-size: 32px;
-    display: block;
-  }
-
-  .welcome-text {
-    color: var(--text-muted);
-    font-size: 15px;
-    line-height: 1.6;
-    margin: 0;
-  }
-
+  
   /* ===================== REGISTER SECTION ===================== */
   .register-section {
     max-width: 1280px;
