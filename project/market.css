@@ -1,0 +1,168 @@
+:root{
+    --navy:#0F172A;
+    --blue:#3B82F6;
+    --mint:#A7F3D0;
+    --white:#FFFFFF;
+    --gray:#F1F5F9;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+
+    background-color:#141d34;
+ 
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background: var(--navy);
+    text-align: center;
+    z-index: 1000;
+}
+
+#header h1{
+    color: var(--blue);
+    margin: 10px;
+}
+
+
+
+#navbar input{
+    display: none;
+}
+
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 12%;
+    height: 100%;
+    display: flex;
+    font-size: larger;
+    z-index: 1100;
+}
+
+.nav-btn{
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    background: var(--navy);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 1200;
+}
+
+
+
+.menu-icon{ display: inline; }
+
+#nav-btn:checked + .nav-btn .menu-icon{
+    display: none;
+}
+
+
+
+
+.nav-items{
+    font-size: 15px;
+    flex-direction: column;
+    background-color: var(--navy);
+    justify-content: center;
+
+    padding: 80px 15px 15px;
+    margin: -10px;
+    width: 100%;
+    border-radius: 25px;
+
+    transform: translateX(-120%);
+    opacity: 0;
+    transition: 0.4s ease;
+    pointer-events: none;
+
+    display: flex;
+    gap: 5px;
+}
+
+.nav-items a{
+    text-decoration: none;
+    color: var(--white);
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.nav-items a:hover{
+    background-color: var(--blue);
+}
+
+#nav-btn:checked ~ #navbar .nav-items{
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.nav-items i{
+    margin-right: 8px;
+}
+
+#cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  
+
+}
+.card{
+    margin: 15px;
+
+    width: 200px;
+    height: 390px;
+    border-radius: 15px;
+    border: 2px solid var(--blue);
+    margin-top: 80px;
+    color: var(--white);
+    transition: 0.3s ease;
+
+}
+
+.card:hover{
+    scale: 1.08;
+}
+.card button{
+    color: var(--white);
+    background-color: var(--blue);
+    padding: 10px;
+    width: 70px;
+    border-radius: 10px;
+    align-items: center;
+    border: none;
+    transition: 0.3s ease;
+}
+.card button:hover{
+    scale: 1.08;
+}
+
+footer{
+    background: var(--navy);
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 40px;
+}
+
+.links a{
+    color: white;
+    margin: 0 10px;
+    font-size: 22px;
+}
+
+
