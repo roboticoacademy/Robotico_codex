@@ -12,12 +12,11 @@ body{
     overflow-x: hidden;
     font-family: Arial, sans-serif;
 
-    background-image: url(background.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
-    background-color: rgba(15,23,36,0.80);
+    background-color: rgba(246, 246, 246, 0.8);
     background-blend-mode: multiply;
 }
 
