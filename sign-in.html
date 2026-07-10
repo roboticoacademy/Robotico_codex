@@ -1,14 +1,106 @@
 <!DOCTYPE html>
 <html lang="ar" dir="ltr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Health Care - Create Your Account</title>
 <link rel="stylesheet" href="sign-in.css">
 
 </head>
 <body>
 
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar">
+    <div class="brand">
+      <span class="icon">🏥</span>
+      Health Care
+    </div>
+   <div id="navbar1">
+
+        <label for="nav-btn" class="nav-btn">
+            <span class="menu-icon">☰</span>
+        </label>
+
+        <div class="nav-items">
+
+            <a href="home_page.html">
+                <i class="fa-solid fa-house"></i> Home
+            </a>
+
+            <a href="Our service.html">
+                <i class="fa-solid fa-stethoscope"></i> Our Service
+            </a>
+
+            <a href="doctors page.html">
+                <i class="fa-solid fa-user-doctor"></i> Doctors
+            </a>
+
+            <a href="Market.html">
+                <i class="fa-solid fa-cart-shopping"></i> Market
+            </a>
+
+            <a href="about.html">
+                <i class="fa-solid fa-circle-info"></i> About Us
+            </a>
+
+            <a href="contact.html">
+                <i class="fa-solid fa-envelope"></i> Contact Us
+            </a>
+
+        </div>
+    <a href="#register" class="nav-cta">Get Started</a>
+    <button class="nav-toggle" aria-label="Open menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </nav>
+
+  <!-- ===================== HERO SECTION ===================== -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="eyebrow">TRUSTED HEALTHCARE PLATFORM</p>
+      <h1>Connecting patients with quality care, anytime, anywhere.</h1>
+      <p class="description">
+        Our Healthcare platform provides easy access to experienced doctors and reliable medical consultations,
+        especially for people in areas without nearby hospitals. It also includes a medicine marketplace for
+        ordering essential medications safely and conveniently. All services are supported by verified
+        documentation and strict standards to ensure trust, safety, and high-quality care.
+      </p>
+      <a href="#register" class="register-now">
+        Register Now <i class="fa-solid fa-arrow-right"></i>
+      </a>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <p class="stat-number">25k+</p>
+          <p class="stat-label">Patients</p>
+        </div>
+        <div class="stat-card">
+          <p class="stat-number">15+</p>
+          <p class="stat-label">Areas Covered</p>
+        </div>
+        <div class="stat-card">
+          <p class="stat-number">100k+</p>
+          <p class="stat-label">Consultations</p>
+        </div>
+        <div class="stat-card">
+          <p class="stat-number">150k+</p>
+          <p class="stat-label">Medicine Sold</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="welcome-card">
+        <div class="welcome-icon">🏥</div>
+        <p class="welcome-eyebrow">WELCOME TO</p>
+        <h2 class="welcome-title">
+          Health
+          <span class="line-2">CARE</span>
+        </h2>
+        <p class="welcome-text">
+          Create your account to connect with trusted healthcare professionals anytime, anywhere.
+        </p>
+      </div>
+    </div>
+  </section>
 
   <!-- ===================== REGISTER SECTION ===================== -->
   <section class="register-section" id="register">
@@ -69,7 +161,7 @@
           </label>
         </div>
 
-        <button type="submit" class="register-btn">confirm</button>
+        <button type="submit" class="register-btn">Confirm</button>
 
         <div class="form-footer-note">
           <p>By creating an account, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
@@ -80,30 +172,34 @@
   </section>
 
   <!-- ===================== FOOTER ===================== -->
-  <footer class="site-footer" id="contact">
-    <div class="footer-top">
-      💙 Health Care Platform
-    </div>
+  <footer>
 
-    <p>Connecting patients with trusted healthcare services.</p>
+        <div class="footer-top">
+            💙 Health Care Platform
+        </div>
 
-    <div class="footer-links">
-      <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-      <a href="#"><i class="fa-brands fa-facebook"></i></a>
-      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-      <a href="#"><i class="fa-brands fa-youtube"></i></a>
-    </div>
+        <p>
+            Connecting patients with trusted healthcare services.
+        </p>
 
-    <div class="tips-bar">
-      <marquee>
-        🩺 Regular checkups save lives &nbsp;•&nbsp; 💧 Stay hydrated &nbsp;•&nbsp; 🏃 Exercise daily &nbsp;•&nbsp; 🥗 Eat healthy food &nbsp;•&nbsp; 😴 Get enough sleep
-      </marquee>
-    </div>
+        <div class="links">
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
 
-    <div class="copy">
-      © 2026 Health Care. All Rights Reserved.
-    </div>
-  </footer>
+        <div class="tips-bar">
+            <marquee>
+                🩺 Regular checkups save lives • 💧 Stay hydrated • 🏃 Exercise daily • 🥗 Eat healthy food • 😴 Get enough sleep
+            </marquee>
+        </div>
+
+        <div class="copy">
+            © 2026 Health Care. All Rights Reserved.
+        </div>
+
+    </footer>
 
 </body>
 </html>
