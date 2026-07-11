@@ -5,10 +5,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Health Care - Share Your Review</title>
 <link rel="stylesheet" href="healthcare-review-form.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
+        <div id="header">
+    <h1> 🏥 Review</h1>
+</div>
+<input type="checkbox" id="nav-btn">
+<div id="navbar">
+    <label for="nav-btn" class="nav-btn">
+        <span class="menu-icon">☰</span>
+    </label>
+    <div class="nav-items">
+        <a href="sign-in.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href=" service.html"><i class="fa-solid fa-stethoscope"></i> Our Service</a>
+        <a href="doctors page.html"><i class="fa-solid fa-user-doctor"></i> Doctors</a>
+        <a href="market.html"><i class="fa-solid fa-cart-shopping"></i> Market</a>
+        <a href="healthcare-review-form.html"><i class="fa-solid fa-envelope"></i> Review Us</a>
+    </div>
+</div>
 
   <!-- ===================== REVIEW SECTION ===================== -->
+
   <section class="register-section" id="review">
     <div class="register-intro">
       <p class="platform-tag">💙 Health Care Platform</p>
@@ -19,7 +37,8 @@
       <h1 class="form-heading">Health Care</h1>
       <h2 class="form-subheading">Share Your Review</h2>
 
-      <form id="reviewForm" novalidate>
+      <form id="reviewForm"  novalidate>
+        
         <div class="form-row">
           <div class="form-group">
             <label for="name">Full Name</label>
@@ -70,31 +89,25 @@
     </div>
   </section>
 
-  <!-- ===================== FOOTER ===================== -->
-  <footer class="site-footer" id="contact">
+
+<footer>
     <div class="footer-top">
-      💙 Health Care Platform
+        💙 Health Care Platform
     </div>
-
     <p>Connecting patients with trusted healthcare services.</p>
-
-    <div class="footer-links">
-      <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-      <a href="#"><i class="fa-brands fa-facebook"></i></a>
-      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    <div class="links">
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
     </div>
-
     <div class="tips-bar">
-      <marquee>
-        🩺 Regular checkups save lives &nbsp;•&nbsp; 💧 Stay hydrated &nbsp;•&nbsp; 🏃 Exercise daily &nbsp;•&nbsp; 🥗 Eat healthy food &nbsp;•&nbsp; 😴 Get enough sleep
-      </marquee>
+        <marquee>
+            🩺 Regular checkups save lives • 💧 Stay hydrated • 🏃 Exercise daily • 🥗 Eat healthy food • 😴 Get enough sleep
+        </marquee>
     </div>
-
-    <div class="copy">
-      © 2026 Health Care. All Rights Reserved.
-    </div>
-  </footer>
+    <div class="copy">© 2026 Health Care. All Rights Reserved.</div>
+</footer>
 
 <script>
   const form = document.getElementById('reviewForm');
@@ -132,6 +145,8 @@
     form.style.display = 'block';
     confirmation.classList.remove('visible');
   });
+
+    
 </script>
 
 </body>
