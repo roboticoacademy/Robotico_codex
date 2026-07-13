@@ -270,7 +270,9 @@ body{
     color:var(--white);
 }
 
-
+main{
+    flex: 1;
+}
 footer{
    
     background: var(--blue);
