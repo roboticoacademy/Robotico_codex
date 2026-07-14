@@ -222,21 +222,7 @@ body{
     background:var(--blue-dark);
 }
 
-.profile{
-    flex:1;
-    background:var(--white);
-    color:var(--blue);
-    border:2px solid var(--blue);
-    padding:14px;
-    border-radius:10px;
-    cursor:pointer;
-    transition:.3s;
-}
 
-.profile:hover{
-    background: var(--blue-dark);
-    color:white;
-}
 
 /*==========================
     PAGINATION
