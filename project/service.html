@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Health Care -  Scanner</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="service.css">
+
+</head>
+<body>
+<div id="header">
+    <h1> 🏥 Service</h1>
+</div>
+<input type="checkbox" id="nav-btn">
+<div id="navbar">
+    <label for="nav-btn" class="nav-btn">
+        <span class="menu-icon">☰</span>
+    </label>
+    <div class="nav-items">
+        <a href="sign-in.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href=" service.html"><i class="fa-solid fa-stethoscope"></i> Service</a>
+        <a href="doctors page.html"><i class="fa-solid fa-user-doctor"></i> Doctors</a>
+        <a href="market.html"><i class="fa-solid fa-cart-shopping"></i> Market</a>
+        <a href="healthcare-review-form.html"><i class="fa-solid fa-envelope"></i> Review Us</a>
+          <a href="NFC.html"><i class="fa-brands fa-nfc-symbol"></i>NFC DATA</a>
+    </div>
+</div>
+
+<main>
+  <h1>Health Care Without borderless </h1>
+  <div class="scan-container">
+    <p>Use your camera or upload the photo</p>
+    <label for="fileInput">📸 Scan </label>
+    <input type="file" accept="image/*" id="fileInput" onchange=" scanGrowth(event)">
+    
+    <div class="preview-section">
+      <img id="preview" alt="Plant Preview">
+      <p id="result"></p>
+    </div>
+    
+    <a href="sign-in.html" class="back-btn">⬅ Back to Home</a>
+  </div>
+</main>
+
+<footer>
+    <div class="footer-top">
+        💙 Health Care Platform
+    </div>
+    <p>Connecting patients with trusted healthcare services.</p>
+    <div class="links">
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <div class="tips-bar">
+        <marquee>
+            🩺 Regular checkups save lives • 💧 Stay hydrated • 🏃 Exercise daily • 🥗 Eat healthy food • 😴 Get enough sleep
+        </marquee>
+    </div>
+    <div class="copy">© 2026 Health Care. All Rights Reserved.</div>
+</footer>
+    
+
+
+<script src="js/growth.js"></script>
+
+</body>
+</html>

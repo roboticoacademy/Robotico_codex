@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Health Care - Share Your Review</title>
+<link rel="stylesheet" href="healthcare-review-form.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+        <div id="header">
+    <h1> 🏥 Review</h1>
+</div>
+<input type="checkbox" id="nav-btn">
+<div id="navbar">
+    <label for="nav-btn" class="nav-btn">
+        <span class="menu-icon">☰</span>
+    </label>
+    <div class="nav-items">
+        <a href="sign-in.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href=" service.html"><i class="fa-solid fa-stethoscope"></i> Our Service</a>
+        <a href="doctors page.html"><i class="fa-solid fa-user-doctor"></i> Doctors</a>
+        <a href="market.html"><i class="fa-solid fa-cart-shopping"></i> Market</a>
+        <a href="healthcare-review-form.html"><i class="fa-solid fa-envelope"></i> Review Us</a>
+    </div>
+</div>
+
+  <!-- ===================== REVIEW SECTION ===================== -->
+
+  <section class="register-section" id="review">
+    <div class="register-intro">
+      <p class="platform-tag">💙 Health Care Platform</p>
+      <p>Your experience helps other patients choose trusted care with confidence.</p>
+    </div>
+
+    <div class="form-section">
+      <h1 class="form-heading">Health Care</h1>
+      <h2 class="form-subheading">Share Your Review</h2>
+
+      <form id="reviewForm"  novalidate>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <span class="field-error" id="nameError">Please enter your name.</span>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Your Rating</label>
+            <div class="rating-row">
+              <div class="stars">
+                <input type="radio" id="star5" name="rating" value="5" required><label for="star5">★</label>
+                <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+                <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+                <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+                <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+              </div>
+              <span class="rating-hint">1 (Poor) – 5 (Excellent)</span>
+            </div>
+            <span class="field-error" id="ratingError">Please select a rating.</span>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="comment">Your Review</label>
+            <textarea id="comment" name="comment" placeholder="Tell us about your experience with our healthcare services" required></textarea>
+            <span class="field-error" id="commentError">Please write a comment.</span>
+          </div>
+        </div>
+
+        <button type="submit" class="register-btn">Submit Review</button>
+
+        <div class="form-footer-note">
+          <p>Reviews are moderated and may be shared publicly to help other patients.</p>
+          <p class="secure-note">🔒 Your personal information is securely protected and will only be used for healthcare services.</p>
+        </div>
+      </form>
+
+      <div class="confirmation" id="confirmation">
+        <div class="confirm-mark">✓</div>
+        <h3>Thank you for your review</h3>
+        <p>We appreciate you taking the time to share your experience.</p>
+        <button type="button" id="resetBtn" class="secondary-btn">Submit Another Review</button>
+      </div>
+    </div>
+  </section>
+
+
+<footer>
+    <div class="footer-top">
+        💙 Health Care Platform
+    </div>
+    <p>Connecting patients with trusted healthcare services.</p>
+    <div class="links">
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <div class="tips-bar">
+        <marquee>
+            🩺 Regular checkups save lives • 💧 Stay hydrated • 🏃 Exercise daily • 🥗 Eat healthy food • 😴 Get enough sleep
+        </marquee>
+    </div>
+    <div class="copy">© 2026 Health Care. All Rights Reserved.</div>
+</footer>
+
+<script>
+  const form = document.getElementById('reviewForm');
+  const confirmation = document.getElementById('confirmation');
+  const resetBtn = document.getElementById('resetBtn');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value.trim();
+    const comment = document.getElementById('comment').value.trim();
+    const rating = form.querySelector('input[name="rating"]:checked');
+
+    document.getElementById('nameError').style.display = name ? 'none' : 'block';
+    document.getElementById('ratingError').style.display = rating ? 'none' : 'block';
+    document.getElementById('commentError').style.display = comment ? 'none' : 'block';
+
+    if (!name || !rating || !comment) return;
+
+    // Collected data — in a real project this would be sent to a server.
+    const submission = {
+      name: name,
+      rating: rating.value,
+      comment: comment
+    };
+    console.log('Review submitted:', submission);
+
+    form.style.display = 'none';
+    confirmation.classList.add('visible');
+  });
+
+  resetBtn.addEventListener('click', function () {
+    form.reset();
+    document.querySelectorAll('.field-error').forEach(el => el.style.display = 'none');
+    form.style.display = 'block';
+    confirmation.classList.remove('visible');
+  });
+
+
+
+
+form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const comment = document.getElementById("comment").value.trim();
+    const rating = document.querySelector('input[name="rating"]:checked');
+
+    document.getElementById("nameError").style.display = name ? "none" : "block";
+    document.getElementById("commentError").style.display = comment ? "none" : "block";
+    document.getElementById("ratingError").style.display = rating ? "none" : "block";
+
+    if (!name || !comment || !rating) return;
+
+    const data = {
+        name: name,
+        rating: rating.value,
+        comment: comment
+    };
+
+    try {
+        const response = await fetch("https://script.google.com/macros/s/AKfycbxKFfAMV1dbdiuISAXOKTK4_zF3BM4fxRxfVGukkKgrx2YhTTOg1kXR99TvHu7lSo2nZg/exec", {
+            method: "POST",
+            body: JSON.stringify(data)
+        });
+
+        if (response.ok) {
+            form.style.display = "none";
+            confirmation.classList.add("visible");
+        } else {
+            alert("Failed to submit review.");
+        }
+
+    } catch (err) {
+        alert("Connection Error");
+        console.log(err);
+    }
+});
+
+resetBtn.addEventListener("click", function () {
+    form.reset();
+    document.querySelectorAll(".field-error").forEach(el => el.style.display = "none");
+    form.style.display = "block";
+    confirmation.classList.remove("visible");
+});
+    
+</script>
+
+</body>
+</html>
