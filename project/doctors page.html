@@ -19,7 +19,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 
 <body>
 
-
+<main>
 <div id="header">
     <h1> 🏥 Doctors</h1>
 </div>
@@ -397,6 +397,37 @@ Book Appointment
     </div>
     <div class="copy">© 2026 Health Care. All Rights Reserved.</div>
 </footer>
+</main>
+
+<script>
+    const scriptURL = "https://script.google.com/macros/s/AKfycbxRvJiduonpWcEMTsgTaJBfAyVx_AIPEe9OJqttjrlZyjWFnEloOnLLue0viuNxhlFzQw/exec";
+
+const buttons = document.querySelectorAll(".book");
+
+buttons.forEach(button => {
+    button.addEventListener("click", () => {
+
+        const doctorName = button
+            .closest(".doctor-card")
+            .querySelector("h2").textContent;
+
+        fetch(scriptURL, {
+            method: "POST",
+            body: JSON.stringify({
+                doctor: doctorName,
+                status: "Doctor Booked"
+            })
+        })
+        .then(() => {
+            alert("Appointment Booked Successfully ✅");
+        })
+        .catch(() => {
+            alert("Error Booking Appointment ❌");
+        });
+
+    });
+});
+</script>
 
 </body>
 
