@@ -69,7 +69,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 
 <div class="buttons">
 
-<button class="book">
+<button class="book" data-name="Dr. Mohammed Ali">
 
 Book Appointment
 
@@ -113,7 +113,7 @@ View Profile
 
 <div class="buttons">
 
-<button class="book">
+<button class="book" data-name="Sarah Ibrahim">
 
 Book Appointment
 
@@ -157,7 +157,7 @@ View Profile
 
 <div class="buttons">
 
-<button class="book">
+<button class="book" data-name="Dr. Ahmed Hassan">
 
 Book Appointment
 
@@ -200,7 +200,7 @@ View Profile
 
     <div class="buttons">
 
-        <button class="book">Book Appointment</button>
+        <button class="book" data-name=">Dr. Omar Khaled">Book Appointment</button>
 
         <button class="profile">View Profile</button>
 
@@ -236,7 +236,7 @@ View Profile
 
     <div class="buttons">
 
-        <button class="book">Book Appointment</button>
+        <button class="book" data-name="Dr. Fatma Mostafa">Book Appointment</button>
 
         <button class="profile">View Profile</button>
 
@@ -272,7 +272,7 @@ View Profile
 
     <div class="buttons">
 
-        <button class="book">Book Appointment</button>
+        <button class="book" data-name="Dr. Nour Hassan">Book Appointment</button>
 
         <button class="profile">View Profile</button>
 
@@ -308,7 +308,7 @@ View Profile
 
     <div class="buttons">
 
-        <button class="book">Book Appointment</button>
+        <button class="book" data-name="Dr. Mahmoud Samir">Book Appointment</button>
 
         <button class="profile">View Profile</button>
 
@@ -344,48 +344,14 @@ View Profile
 
     <div class="buttons">
 
-        <button class="book">Book Appointment</button>
+        <button class="book" data-name="Dr. Layla Adel">Book Appointment</button>
 
         <button class="profile">View Profile</button>
 
     </div>
 
 </div>
-<!-- Doctor 8 -->
 
-<div class="doctor-card">
-
-    <div class="top-badge">
-        <span>Available Today</span>
-    </div>
-
-    <img src="doctor8.jpg">
-
-    <h2>Dr. Layla Adel</h2>
-
-    <h4>Endocrinologist</h4>
-
-    <div class="details">
-
-        <p><i class="fa-solid fa-star"></i> 4.9 (689 Reviews)</p>
-
-        <p><i class="fa-solid fa-user-doctor"></i> 10 Years Experience</p>
-
-        <p><i class="fa-solid fa-hospital"></i> Diabetes Care Clinic</p>
-
-        <p><i class="fa-solid fa-location-dot"></i> Mansoura</p>
-
-    </div>
-
-    <div class="buttons">
-
-        <button class="book">Book Appointment</button>
-
-        <button class="profile">View Profile</button>
-
-    </div>
-
-</div>
 </section>
 
 <section class="pagination">
@@ -415,35 +381,7 @@ View Profile
 </footer>
 </main>
 
-<script>
-    const scriptURL = "https://script.google.com/macros/s/AKfycbxRvJiduonpWcEMTsgTaJBfAyVx_AIPEe9OJqttjrlZyjWFnEloOnLLue0viuNxhlFzQw/exec";
-
-const buttons = document.querySelectorAll(".book");
-
-buttons.forEach(button => {
-    button.addEventListener("click", () => {
-
-        const doctorName = button
-            .closest(".doctor-card")
-            .querySelector("h2").textContent;
-
-        fetch(scriptURL, {
-            method: "POST",
-            body: JSON.stringify({
-                doctor: doctorName,
-                status: "Doctor Booked"
-            })
-        })
-        .then(() => {
-            alert("Appointment Booked Successfully ✅");
-        })
-        .catch(() => {
-            alert("Error Booking Appointment ❌");
-        });
-
-    });
-});
-</script>
+<script src="doctor.js"></script>
 
 </body>
 
