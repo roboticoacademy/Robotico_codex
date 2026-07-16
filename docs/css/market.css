@@ -20,7 +20,7 @@ body{
     margin: 0;
     min-height: 100vh;
     overflow-x: hidden;
-    font-family: Arial, sans-serif;
+    font-family: "Segoe UI", sans-serif;
     background: var(--off-white);
     color: var(--black);
 }
@@ -82,7 +82,7 @@ body{
 }
 
 .nav-items{
-    font-size: 15px;
+    font-size: 14.5px;
     flex-direction: column;
     background: var(--white);
     justify-content: center;

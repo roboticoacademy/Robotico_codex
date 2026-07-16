@@ -28,7 +28,7 @@
   body {
     margin: 0;
     background-color: var(--off-white);
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-family: "Segoe UI", sans-serif;
     color: var(--text-gray);
   }
 
@@ -94,7 +94,7 @@
 }
 
 .nav-items{
-    font-size: 15px;
+    font-size: 14.5px;
     flex-direction: column;
     background: var(--white);
     justify-content: center;

@@ -13,7 +13,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial,sans-serif;
+    font-family: "Segoe UI", sans-serif;
 }
 
 body{
@@ -124,4 +124,132 @@ body{
 
 a{
     text-decoration:none;
+}
+/* ================= Responsive ================= */
+
+@media (max-width: 992px){
+
+    .container{
+        width:90%;
+    }
+
+    .top-card{
+        padding:30px;
+    }
+
+    .top-card img{
+        width:140px;
+        height:140px;
+    }
+
+    .top-card h1{
+        font-size:30px;
+    }
+
+    .card{
+        padding:25px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .container{
+        width:95%;
+        margin:20px auto;
+    }
+
+    .top-card{
+        padding:25px 20px;
+    }
+
+    .top-card img{
+        width:120px;
+        height:120px;
+    }
+
+    .top-card h1{
+        font-size:26px;
+    }
+
+    .healthy{
+        font-size:16px;
+    }
+
+    .blood{
+        position:static;
+        margin:20px auto 0;
+        width:70px;
+        height:70px;
+        font-size:24px;
+    }
+
+    .card{
+        padding:20px;
+    }
+
+    .card h2{
+        font-size:22px;
+    }
+
+    .info p{
+        font-size:16px;
+    }
+
+    .back-btn{
+        font-size:16px;
+        padding:16px;
+    }
+
+}
+
+@media (max-width:480px){
+
+    .container{
+        width:96%;
+    }
+
+    .top-card{
+        padding:20px 15px;
+    }
+
+    .top-card img{
+        width:100px;
+        height:100px;
+        border-width:4px;
+    }
+
+    .top-card h1{
+        font-size:22px;
+    }
+
+    .healthy{
+        font-size:15px;
+    }
+
+    .blood{
+        width:60px;
+        height:60px;
+        font-size:20px;
+    }
+
+    .card{
+        padding:18px;
+        border-left:4px solid var(--blue);
+    }
+
+    .card h2{
+        font-size:20px;
+    }
+
+    .info p{
+        font-size:15px;
+        line-height:1.6;
+    }
+
+    .back-btn{
+        padding:14px;
+        font-size:15px;
+    }
+
 }
