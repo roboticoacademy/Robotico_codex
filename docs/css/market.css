@@ -20,7 +20,7 @@ body{
     margin: 0;
     min-height: 100vh;
     overflow-x: hidden;
-    font-family: Arial, sans-serif;
+    font-family: "Segoe UI", sans-serif;
     background: var(--off-white);
     color: var(--black);
 }
@@ -82,7 +82,7 @@ body{
 }
 
 .nav-items{
-    font-size: 15px;
+    font-size: 14.5px;
     flex-direction: column;
     background: var(--white);
     justify-content: center;
@@ -216,47 +216,147 @@ footer{
     color: var(--text-gray);
 }
 
-/* ================= Responsive ================= */
+/* ==========================
+   RESPONSIVE DESIGN
+========================== */
 
-@media (max-width:1024px){
-    #cards{
-        gap:10px;
+
+/* Tablet */
+@media (max-width:900px){
+
+    #header{
+        height:55px;
     }
-
-    .card{
-        width:45%;
-    }
-}
-
-@media (max-width:700px){
-
-    #navbar{
-        width:auto;
-    }
-
-    .nav-items{
-        width:220px;
-        border-radius:0 15px 15px 0;
-    }
-
-    .card{
-        width:80%;
-        height:auto;
-        min-height:340px;
-    }
-}
-
-@media (max-width:420px){
 
     #header h1{
-        font-size:20px;
+        font-size:22px;
     }
+
+
+    #navbar{
+        width:250px;
+    }
+
+
+    #cards{
+        padding:0 20px;
+        margin-top:20px;
+    }
+
+
+    .card{
+        width:220px;
+        height:390px;
+    }
+
+}
+
+
+
+/* Mobile */
+@media (max-width:600px){
+
+
+    body{
+        overflow-x:hidden;
+    }
+
+
+
+    #header{
+        height:55px;
+    }
+
+
+    #header h1{
+        font-size:18px;
+        margin:15px 0;
+    }
+
+
+
+    #navbar{
+        width:80%;
+    }
+
+
+
+    .nav-btn{
+        top:10px;
+        left:10px;
+        padding:7px 10px;
+    }
+
+
+
+    .nav-items{
+        border-radius:0 25px 25px 0;
+        padding-top:70px;
+    }
+
+
+
+    #cards{
+        flex-direction:column;
+        align-items:center;
+        padding:0;
+    }
+
+
 
     .card{
         width:90%;
+        max-width:330px;
+        height:auto;
+        min-height:390px;
+        margin:20px 0;
+        margin-top:70px;
     }
 
+
+
     .card img{
-        height:130px;
+        height:180px;
     }
+
+
+
+    .card h3{
+        font-size:20px;
+    }
+
+
+
+    .card p{
+        font-size:14px;
+        padding:0 5px;
+    }
+
+
+
+    .card:hover{
+        transform:translateY(-8px);
+    }
+
+
+
+    .card button{
+        width:100px;
+        padding:12px;
+    }
+
+
+
+    footer{
+        padding:20px 10px;
+        font-size:14px;
+    }
+
+
+
+    .links a{
+        font-size:18px;
+        margin:0 6px;
+    }
+
 }

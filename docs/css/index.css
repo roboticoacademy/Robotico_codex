@@ -28,7 +28,7 @@
   body {
     margin: 0;
     background-color: var(--off-white);
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-family: "Segoe UI", sans-serif;
     color: var(--text-gray);
   }
 
@@ -94,7 +94,7 @@
 }
 
 .nav-items{
-    font-size: 15px;
+    font-size: 14.5px;
     flex-direction: column;
     background: var(--white);
     justify-content: center;
@@ -448,85 +448,313 @@ footer{
 .links a:hover{
     color: var(--text-gray);
 }
-  /* ===================== RESPONSIVE ===================== */
-  @media (max-width: 1000px) {
-    .hero {
-      flex-direction: column;
+
+ /* ==========================
+   RESPONSIVE DESIGN
+========================== */
+
+
+/* Tablet */
+@media (max-width: 1000px){
+
+    #header{
+        height:55px;
     }
 
-    .hero-visual {
-      flex: 1;
-      width: 100%;
-      max-width: 380px;
-      align-self: center;
+    #header h1{
+        font-size:22px;
     }
 
-    .register-section {
-      flex-direction: column;
-      align-items: center;
+
+    #navbar{
+        width:260px;
     }
 
-    .register-intro {
-      flex: none;
-      text-align: center;
-      max-width: 560px;
+
+
+    .hero{
+        flex-direction:column;
+        padding:90px 30px 50px;
+        gap:40px;
+        text-align:center;
     }
 
-    .platform-tag {
-      justify-content: center;
-      width: 100%;
+
+    .hero-content p.description{
+        margin-left:auto;
+        margin-right:auto;
     }
 
-    .form-section {
-      flex: none;
-      width: 100%;
-      max-width: 560px;
-    }
-  }
 
-  @media (max-width: 700px) {
-    .navbar {
-      padding: 16px 20px;
+
+    .hero-content .register-now{
+        margin-bottom:35px;
     }
 
-    .navbar .nav-links {
-      display: none;
+
+
+    .stats-grid{
+        grid-template-columns:repeat(2,1fr);
+        margin:auto;
     }
 
-    .nav-toggle {
-      display: block;
+
+
+    .hero-visual{
+        flex:unset;
+        width:100%;
+        max-width:400px;
     }
 
-    .hero {
-      padding: 50px 24px 40px;
+
+
+    .register-section{
+        flex-direction:column;
+        align-items:center;
+        padding:60px 30px;
+        gap:40px;
     }
 
-    .hero-content h1 {
-      font-size: 30px;
+
+
+    .register-intro{
+        flex:none;
+        width:100%;
+        max-width:560px;
+        text-align:center;
     }
 
-    .stats-grid {
-      grid-template-columns: repeat(2, 1fr);
+
+
+    .form-section{
+        flex:none;
+        width:100%;
+        max-width:560px;
     }
 
-    .register-section {
-      padding: 50px 24px 70px;
+
+
+    .form-heading{
+        text-align:center;
+        font-size:34px;
     }
 
-    .form-row {
-      flex-direction: column;
-      gap: 22px;
+
+
+    .form-subheading{
+        text-align:center;
+        font-size:22px;
     }
 
-    .form-heading {
-      font-size: 32px;
+}
+
+
+
+/* Mobile */
+@media (max-width:600px){
+
+
+    body{
+        overflow-x:hidden;
     }
 
-    .form-subheading {
-      font-size: 22px;
+
+
+    #header{
+        height:55px;
     }
 
-    .site-footer {
-      padding: 40px 20px 0;
+
+    #header h1{
+        font-size:18px;
+        margin:15px 0;
     }
-  }
+
+
+
+    #navbar{
+        width:80%;
+    }
+
+
+
+    .nav-btn{
+        top:10px;
+        left:10px;
+        padding:7px 10px;
+    }
+
+
+
+    .nav-items{
+        border-radius:0 25px 25px 0;
+        padding-top:70px;
+    }
+
+
+
+    .hero{
+        padding:80px 18px 40px;
+        gap:30px;
+    }
+
+
+
+    .hero-content .eyebrow{
+        font-size:11px;
+        letter-spacing:2px;
+    }
+
+
+
+    .hero-content h1{
+        font-size:28px;
+    }
+
+
+
+    .hero-content p.description{
+        font-size:14px;
+        line-height:1.6;
+    }
+
+
+
+    .hero-content .register-now{
+        padding:12px 22px;
+        font-size:14px;
+    }
+
+
+
+    .stats-grid{
+        grid-template-columns:1fr;
+        gap:15px;
+        width:100%;
+    }
+
+
+
+    .stat-card{
+        padding:18px 12px;
+    }
+
+
+
+    .stat-card .stat-number{
+        font-size:22px;
+    }
+
+
+
+    .hero-visual{
+        width:100%;
+    }
+
+
+
+    .welcome-card{
+        padding:35px 20px;
+        border-radius:15px;
+    }
+
+
+
+    .welcome-icon{
+        font-size:45px;
+    }
+
+
+
+    .welcome-title{
+        font-size:28px;
+    }
+
+
+
+    .welcome-title .line-2{
+        font-size:24px;
+        letter-spacing:3px;
+    }
+
+
+
+    .welcome-text{
+        font-size:14px;
+    }
+
+
+
+
+    /* Register */
+
+    .register-section{
+        padding:50px 18px;
+    }
+
+
+
+    .register-intro p{
+        font-size:14px;
+    }
+
+
+
+    .form-heading{
+        font-size:28px;
+    }
+
+
+
+    .form-subheading{
+        font-size:20px;
+        margin-bottom:20px;
+    }
+
+
+
+    .form-row{
+        flex-direction:column;
+        gap:15px;
+        margin-bottom:15px;
+    }
+
+
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="tel"],
+    .form-group input[type="password"]{
+        padding:12px;
+        font-size:14px;
+    }
+
+
+
+    .gender-row{
+        flex-direction:column;
+        gap:12px;
+    }
+
+
+
+    .register-btn{
+        padding:14px;
+        font-size:15px;
+    }
+
+
+
+    footer{
+        padding:20px 10px;
+        font-size:14px;
+    }
+
+
+
+    .links a{
+        font-size:18px;
+        margin:0 6px;
+    }
+
+}

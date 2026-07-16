@@ -20,7 +20,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial,sans-serif;
+    font-family: "Segoe UI", sans-serif;
 }
 
 
@@ -93,7 +93,7 @@ body{
 }
 
 .nav-items{
-    font-size: 15px;
+    font-size: 14.5px;
     flex-direction: column;
     background: var(--white);
     justify-content: center;
@@ -238,4 +238,151 @@ footer{
 
 .links a:hover{
     color: var(--text-gray);
+}
+/* ==========================
+   RESPONSIVE DESIGN
+========================== */
+
+
+/* Tablet */
+@media (max-width:1000px){
+
+    #header{
+        height:55px;
+    }
+
+    #header h1{
+        font-size:22px;
+    }
+
+
+    #navbar{
+        width:260px;
+    }
+
+
+    .cards{
+        flex-wrap:wrap;
+        gap:25px;
+        padding:0 20px;
+    }
+
+
+    .card{
+        width:300px;
+    }
+
+}
+
+
+
+/* Mobile */
+@media (max-width:600px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+
+
+    #header{
+        height:55px;
+    }
+
+
+    #header h1{
+        font-size:18px;
+        margin:15px 0;
+    }
+
+
+
+    #navbar{
+        width:80%;
+    }
+
+
+
+    .nav-btn{
+        top:10px;
+        left:10px;
+        padding:7px 10px;
+    }
+
+
+
+    .nav-items{
+        border-radius:0 25px 25px 0;
+        padding-top:70px;
+    }
+
+
+
+    .cards{
+        flex-direction:column;
+        align-items:center;
+        gap:25px;
+        margin-top:75px;
+        margin-bottom:40px;
+        padding:0 15px;
+    }
+
+
+
+    .card{
+        width:100%;
+        max-width:350px;
+        padding:20px;
+        border-radius:18px;
+    }
+
+
+
+    .card:hover{
+        transform:translateY(-5px);
+    }
+
+
+
+    .profile img{
+        width:100px;
+        height:100px;
+        border-width:4px;
+    }
+
+
+
+    .card h2{
+        font-size:22px;
+        margin-bottom:20px;
+    }
+
+
+
+    .info p{
+        font-size:14px;
+        margin:15px 0;
+    }
+
+
+
+    button{
+        padding:13px;
+        font-size:15px;
+    }
+
+
+
+    footer{
+        padding:20px 10px;
+        font-size:14px;
+    }
+
+
+
+    .links a{
+        font-size:18px;
+        margin:0 6px;
+    }
+
 }

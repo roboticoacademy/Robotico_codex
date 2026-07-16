@@ -17,8 +17,10 @@
 }
 body{
     overflow-x: hidden;
+    font-family: "Segoe UI", sans-serif;
 }
 #header{
+    left: 0px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -40,6 +42,7 @@ body{
 }
 
 #navbar{
+
     position: fixed;
     top: 0;
     left: 0;
@@ -76,7 +79,7 @@ body{
 }
 
 .nav-items{
-    font-size: 15px;
+    font-size: 14.5px;
     flex-direction: column;
     background: var(--white);
     justify-content: center;
@@ -171,7 +174,7 @@ body{
 .doctor-card h2{
     text-align:center;
     color:var(--text-gray);
-    font-size:27px;
+    font-size:24px;
 }
 
 .doctor-card h4{
@@ -260,7 +263,10 @@ main{
     flex: 1;
 }
 footer{
-   
+  display: flex;
+  flex-direction: column;
+   margin-left: -10px;
+   margin-bottom: -10px;
     background: var(--blue);
     color: var(--white);
     text-align: center;
@@ -282,58 +288,202 @@ footer{
     color: var(--text-gray);
 }
 
-/*==========================
-    RESPONSIVE
+/* ==========================
+   RESPONSIVE DESIGN
 ===========================*/
 
-@media(max-width:900px){
 
-header{
-    flex-direction:column;
-    gap:20px;
+/* Tablets */
+@media (max-width: 900px){
+
+    #header{
+        height:55px;
+    }
+
+    #header h1{
+        font-size:22px;
+        margin-top:12px;
+    }
+
+
+    #navbar{
+        width:50%;
+    }
+
+
+    .doctor-grid{
+        width:90%;
+        grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+        gap:25px;
+        margin-top:80px;
+    }
+
+
+    .doctor-card img{
+        width:120px;
+        height:120px;
+    }
+
+
+    .details{
+        padding:0 25px;
+    }
+
+
+    .buttons{
+        padding:20px;
+    }
+
 }
 
-nav{
-    flex-wrap:wrap;
-    justify-content:center;
-}
 
-.hero h1{
-    font-size:42px;
-}
 
-.search-area{
-    flex-direction:column;
-}
+/* Mobile */
+@media (max-width:600px){
 
-.search-area input,
-.search-area button{
-    width:100%;
-}
 
-}
+    body{
+        overflow-x:hidden;
+    }
 
-@media(max-width:600px){
 
-.hero{
-    padding:80px 20px;
-}
+    #header{
+        height:55px;
+    }
 
-.hero h1{
-    font-size:34px;
-}
 
-.doctor-card{
-    border-radius:18px;
-}
+    #header h1{
+        font-size:18px;
+        margin:15px 0;
+    }
 
-.doctor-card img{
-    width:110px;
-    height:110px;
-}
 
-.buttons{
-    flex-direction:column;
-}
+
+    #navbar{
+        width:75%;
+    }
+
+
+
+    .nav-btn{
+        top:10px;
+        left:10px;
+        padding:7px 10px;
+    }
+
+
+
+    .nav-items{
+        width:100%;
+        padding-top:70px;
+        border-radius:0 25px 25px 0;
+    }
+
+
+
+    .doctor-grid{
+        width:95%;
+        margin:80px auto 30px;
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+
+
+    .doctor-card{
+        border-radius:18px;
+    }
+
+
+
+    .doctor-card:hover{
+        transform:translateY(-5px);
+    }
+
+
+
+    .doctor-card img{
+        width:100px;
+        height:100px;
+        border-width:4px;
+        margin-top:30px;
+    }
+
+
+
+    .doctor-card h2{
+        font-size:20px;
+    }
+
+
+
+    .doctor-card h4{
+        font-size:15px;
+    }
+
+
+
+    .details{
+        padding:0 20px;
+    }
+
+
+    .details p{
+        font-size:14px;
+    }
+
+
+
+    .buttons{
+        flex-direction:column;
+        padding:20px;
+        gap:10px;
+    }
+
+
+
+    .book{
+        width:100%;
+    }
+
+
+
+    .top-badge{
+        top:15px;
+        right:15px;
+    }
+
+
+
+    .top-badge span{
+        padding:6px 12px;
+        font-size:11px;
+    }
+
+
+
+    .pagination{
+        margin:40px 0;
+        gap:8px;
+    }
+
+
+
+    .pagination button{
+        padding:10px 15px;
+    }
+
+
+
+    footer{
+        padding:20px 10px;
+        font-size:14px;
+    }
+
+
+    .links a{
+        font-size:18px;
+        margin:0 6px;
+    }
 
 }

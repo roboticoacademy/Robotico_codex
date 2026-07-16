@@ -87,7 +87,7 @@ html, body {
 }
 
 .nav-items{
-    font-size: 15px;
+    font-size: 14.5px;
     flex-direction: column;
     background: var(--white);
     justify-content: center;
@@ -244,3 +244,20 @@ footer{
 @media(max-width:500px){
     .scan-container { padding: 20px 15px; }
     .preview-section img { max-width: 200px; }  }
+
+     #navbar{
+        width: 25%;
+    }
+
+
+
+@media (max-width: 768px){
+
+    #header h1{
+        font-size: 24px;
+    }
+
+    #navbar{
+        width: 70%;
+    }
+}

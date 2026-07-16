@@ -27,7 +27,7 @@
   body {
     margin: 0;
     background-color: var(--off-white);
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-family: "Segoe UI", sans-serif;
     color: var(--text-white);
   }
 
@@ -94,7 +94,7 @@
 }
 
 .nav-items{
-    font-size: 15px;
+    font-size: 14.5px;
     flex-direction: column;
     background: var(--white);
     justify-content: center;
@@ -404,55 +404,218 @@
 .links a:hover{
     color: var(--text-gray);
 }
+/* =====================
+   RESPONSIVE DESIGN
+===================== */
 
-  /* ===================== RESPONSIVE ===================== */
-  @media (max-width: 1000px) {
-    .register-section {
-      flex-direction: column;
-      align-items: center;
+
+/* Tablet */
+@media (max-width: 1000px){
+
+    #header{
+        height:55px;
     }
 
-    .register-intro {
-      flex: none;
-      text-align: center;
-      max-width: 560px;
+    #header h1{
+        font-size:22px;
     }
 
-    .platform-tag {
-      justify-content: center;
-      width: 100%;
+
+    #navbar{
+        width:250px;
     }
 
-    .form-section {
-      flex: none;
-      width: 100%;
-      max-width: 560px;
-    }
-  }
 
-  @media (max-width: 700px) {
-    .register-section {
-      padding: 50px 24px 70px;
+
+    .register-section{
+        flex-direction:column;
+        align-items:center;
+        gap:40px;
+        padding:90px 30px 70px;
     }
 
-    .form-row {
-      flex-direction: column;
-      gap: 22px;
+
+    .register-intro{
+        flex:unset;
+        width:100%;
+        max-width:560px;
+        text-align:center;
     }
 
-    .rating-row {
-      gap: 12px;
+
+    .form-section{
+        flex:unset;
+        width:100%;
+        max-width:560px;
     }
 
-    .form-heading {
-      font-size: 32px;
+
+    .form-heading{
+        font-size:34px;
+        text-align:center;
     }
 
-    .form-subheading {
-      font-size: 22px;
+
+    .form-subheading{
+        font-size:22px;
+        text-align:center;
     }
 
-    .site-footer {
-      padding: 40px 20px 0;
+}
+
+
+
+/* Mobile */
+@media (max-width:600px){
+
+
+    body{
+        overflow-x:hidden;
     }
-  }
+
+
+
+    #header{
+        height:55px;
+    }
+
+
+    #header h1{
+        font-size:18px;
+        margin:15px 0;
+    }
+
+
+
+    #navbar{
+        width:80%;
+    }
+
+
+
+    .nav-btn{
+        top:10px;
+        left:10px;
+        padding:7px 10px;
+    }
+
+
+
+    .nav-items{
+        border-radius:0 25px 25px 0;
+        padding-top:70px;
+    }
+
+
+
+    .register-section{
+        padding:80px 18px 50px;
+        gap:30px;
+    }
+
+
+
+    .register-intro{
+        width:100%;
+    }
+
+
+
+    .register-intro .platform-tag{
+        font-size:13px;
+    }
+
+
+
+    .register-intro p{
+        font-size:14px;
+        line-height:1.6;
+    }
+
+
+
+    .form-section{
+        width:100%;
+    }
+
+
+
+    .form-heading{
+        font-size:28px;
+    }
+
+
+
+    .form-subheading{
+        font-size:20px;
+        margin-bottom:20px;
+    }
+
+
+
+    .form-row{
+        flex-direction:column;
+        gap:15px;
+        margin-bottom:15px;
+    }
+
+
+
+    .form-group input[type="text"],
+    .form-group textarea{
+        padding:12px;
+        font-size:14px;
+    }
+
+
+
+    .form-group textarea{
+        min-height:110px;
+    }
+
+
+
+    .stars label{
+        font-size:28px;
+    }
+
+
+
+    .rating-row{
+        justify-content:center;
+    }
+
+
+
+    .register-btn{
+        padding:14px;
+        font-size:15px;
+    }
+
+
+
+    .confirmation{
+        padding:35px 20px;
+    }
+
+
+
+    .confirmation h3{
+        font-size:18px;
+    }
+
+
+
+    footer{
+        padding:20px 10px;
+        font-size:14px;
+    }
+
+
+
+    .links a{
+        font-size:18px;
+        margin:0 6px;
+    }
+
+}
